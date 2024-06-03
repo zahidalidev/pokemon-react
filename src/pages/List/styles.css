@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.poke-container {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.poke-table {
+  max-width: 900px;
+  padding: 2rem;
+  width: 100vw;
+  background: transparent;
+}
+
+.poke-table-body {
+  max-height: 70vh;
+  overflow: scroll;
+  display: grid;
+  grid-gap: 20px;
+  padding: 1rem;
+  background: transparent;
+}
+
+.poke-table-body tr {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  background: #f3f3;
+  border-radius: 10px;
+  cursor: pointer;
+  display: grid;
+  height: 60px;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+
+.poke-table-body tr:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.poke {
+  display: grid;
+  height: 100%;
+  place-content: center;
+  min-width: 100%;
+  background: transparent;
+  font-weight: 900;
+  font-size: large;
+}
+
+.pagination-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pagination-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-btns button {
+  height: 30px;
+  width: 50px;
+  background: #f3f3;
+}
+
+.pagination-text {
+  font-size: 1rem;
+}
+
+.pagination-button {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-info {
+  color: black;
+}
+
+.pagination-info strong {
+  color: #333;
+}
+
+.pagination-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.pagination-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.message {
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
